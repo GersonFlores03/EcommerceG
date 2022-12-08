@@ -1,0 +1,610 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(354, 78%, 60%);
+  --button-color: hsl(0, 0%, 17%);
+  --button-color-alt: hsl(0, 0%, 21%);
+  --card-color: hsl(0, 0%, 90%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: hsl(206, 4%, 97%);
+  --container-color: #fff;
+  --border-color: hsl(0, 0%, 94%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Roboto', sans-serif;
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+/*
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+ 
+}
+body.dark {
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+
+}
+
+
+img{
+  max-width: 100%;
+  
+  
+}
+.MenuG{
+  display: none;
+}
+
+.Navegacion{
+  display: flex;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+  color: var(--title-color);
+ 
+  width: 100%;
+  cursor: pointer;
+}
+
+ 
+
+ .Logo{
+  width: 50px;
+  position: relative;
+  left: 15%;
+  fill: var(--title-color);
+ 
+  }
+  
+.icon-1{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  left: 75%;
+  
+}
+
+.Description{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  left: 300px;
+  font-size: 12px;
+}
+
+.Description h2{
+  font-size: 14px;
+}
+.Description .color{
+  color: var(--first-color);
+}
+
+.Contenido{
+  padding: 4rem;
+  margin: 0;
+  font-size: larger;
+}
+section{
+  padding: 3rem 11rem;
+  font-size: 10rem;
+ 
+  
+}
+h2{
+  color: var(--title-color);
+  font-size: 2rem;
+}
+p{
+  font-size: 1rem;
+}
+.Monto{
+ position: relative;
+ bottom: -50px;
+ color: var(--first-color);
+ font-size: 2rem;
+ }
+
+.Botones .button1{
+  background-color: var(--text-color-light);
+  text-align: center;
+  border: 10px;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+ .Botones .button2{
+  background-color: var(--button-color);
+  color: white;
+  text-align: center;
+  border: 10px;
+  padding: 25px 45px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  left: -50px;
+  cursor: pointer;
+ }
+
+.Counter{
+  width: 520px;
+  height: 540px;
+  background-color: var(--first-color);
+  display:flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 300px;
+  bottom: 505px;
+  
+  
+}
+
+.cart-conteiner{
+  background-color: rgba(198, 191, 191, 0.737);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 300ms;
+ 
+  
+ 
+
+}
+
+.cart-conteiner.hide{
+ left: -100%;
+
+}
+
+.cart2{
+ background-color: var(--container-color);
+ width:100% ;
+ height:100% ;
+ max-width: 400px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ box-shadow:-4px 5px 10px rgb( 147, 147, 147,)
+}
+
+.cart-close{
+ position: absolute;
+ top: 1rem;
+ right: 1.5rem;
+
+}
+
+.Products{
+ display: grid;
+ gap: 1.5rem;
+ font-size: 1rem;
+ grid-template-columns: repeat(1,2fr);
+ align-content: center;
+ justify-content: center;
+ margin-bottom: 3.5rem ;
+ display: flex;
+ gap: 4rem;
+ list-style-type: none;
+ 
+ 
+ }
+
+.Barra{
+  font-size: 2.5rem;
+  color: var(--button-color-alt);
+}
+
+ul{
+  position: relative;
+  bottom: 380px;
+}
+
+li{
+  display: list-item;
+  text-align: center;
+ }
+
+.Total-Products{
+  color: var(--text-color-light);
+}
+
+.Productos{
+  font-size: 1rem;
+  grid-template-columns: 200px;
+  gap: 2rem;
+  justify-content: center;
+}
+.Productos img{
+  width: 600px;
+}
+
+.Polera1{
+  background-color: var(--card-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  
+
+
+ }
+
+.Polera2{
+  background-color: var(--card-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  
+  
+  
+}
+.Polera3{
+  background-color: var(--card-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+ 
+  
+}
+.Conter{
+  background-color: var(--container-color);
+  border-radius: 10px;
+}
+.Conter2{
+  background-color: var(--container-color);
+  border-radius: 10px;
+
+}
+.Conter3{
+  background-color: var(--container-color);
+  border-radius: 10px;
+}
+.Texto span{
+  font-size: 15px;
+  color: var(--text-color-light);
+  
+}
+.Texto h2{
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+.Texto h3{
+  color: var(--title-color);
+}
+
+.Productos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 10rem;
+  position: relative;
+  gap: 5rem;
+  bottom: 450px;
+}
+
+.Productos button{
+  width: 35px;
+  height: 35px;
+  border: 100px;
+  border-radius: 50px;
+  position: relative;
+  left: 183px;
+  bottom: 70px;
+  cursor: pointer;
+}
+
+/*   Footer    */
+
+footer{
+  width: 100%;
+  padding: 150px 0px;
+  background-color: var(--card-color);
+  background-size: cover;
+  position: relative;
+  bottom: -1930px;
+  
+}
+.Footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px ;
+  margin: auto;
+ }
+ .Logo{
+  fill: var(--first-color);
+}
+
+.box-footer{
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+ 
+}
+
+.box-footer h2{
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+.box-footer a{
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+.box-footer p{
+  color: var(--text-color-light);
+}
+
+
+.CartCenter{
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 150px;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 900px;
+  left: 500px;
+ 
+
+ 
+}
+.PrecioProductos{
+  font-weight: 700;
+}
+
+.ProductoCarrito{
+  font-size: 2rem;
+  max-width: 95px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: -200px;
+  bottom: 50px;
+}
+.PrecioValor{
+  position: relative;
+  bottom: 100px;
+}
+.boton-agregar2{
+ position: relative;
+ bottom:100px;
+}
+#Counter-Products{
+  text-align: center;
+  font-family: var(--body-font);
+}
+.boton-agregar{
+  color: var(--first-color);
+  border-radius: 40px;
+  cursor: pointer;
+}
+.boton-agregar2{
+ color: var(--first-color);
+ border-radius: 30px;
+}
+.Boton-eliminar{
+ color: var(--first-color);
+ width: 30px;
+ height: 30px;
+ border: 10px;
+ border-radius: 10px;
+ position: relative;
+ left: 20px;
+}
+
+
+
+
+/* Responsive  */
+
+@media screen and (max-width: 768px){
+  .Navegacion .Logo{
+   left: 10px;
+  }
+  
+  .Description{
+    left: 80px;
+  }
+   
+  .Contenido{
+    margin-left: -200px;
+  }
+  .Section-1{
+    position: relative;
+    bottom: 50px;
+    left: -25px;
+    }
+  .Counter{
+    width: 300px;
+    height: 400px;
+    bottom: 525px;
+   }
+
+   .Products{
+    gap: 3.5rem;
+  }
+  .Productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .Productos .Polera1 {
+    width: 200px;
+  }
+  .Productos .Polera2{
+    width: 200px;
+  }
+  .Productos .Polera3{
+    width: 200px;
+  }
+  .Productos button{
+   position: relative;
+   bottom: 90px;
+  }
+
+  
+  .CartCenter{
+    left: 160px;
+  }
+  footer{
+    bottom: -1900px;
+  }
+  
+}
+
+
+@media screen and (max-width: 476px){
+  .MenuG{
+    display: block;
+  }
+  .Description{
+    left: 50px;
+    gap: 1rem;
+  }
+  .icon-1{
+   left:300px ;
+  }
+  
+  .Navegacion .Logo{
+    left: -10px;
+   }
+
+   .Counter{
+    left: 180px;
+    bottom: 870px;
+    width: 300px;
+    height: 300px;
+   }
+
+   .Section-1{
+    bottom: -15rem;
+    left: 5px;
+  }
+   .Contenido.Section-1{
+    font-size: 2.5rem;
+    
+   }
+  .Section-1 .button1{
+    position: relative;
+    left: 200px;
+    bottom: 300px;
+  }
+  .Section-1 .button2{
+    position: relative;
+    left: 160px;
+    width: 200px;
+    height: 75px;
+    bottom: 435px;
+
+  }
+  .Section-1 .Botones{
+    position: relative;
+    bottom: 90px;
+    left: 15px;
+  }
+  .Section-1 .Monto{
+    left: 225px;
+    bottom: 40px;
+  }
+  .Products{
+    gap: 1rem;
+  }
+  .Productos{
+    display: flex;
+    left: -100px;
+    gap: 10rem;
+  }
+  .box-footer{
+   position: relative;
+   bottom: 120px;
+  }
+
+  .Footer{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .Logo-footer svg{
+    width: 200px;
+    position: absolute;
+    bottom: -600px;
+    left: 120px;
+  }
+
+  .CartCenter{
+    bottom:1200px;
+    left: 20px;
+  }
+
+  footer{
+    bottom: -1900px;
+  }
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

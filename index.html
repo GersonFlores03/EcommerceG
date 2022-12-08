@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academlo Store</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body >
+    <header>
+    <nav class="Navegacion">
+      <svg class="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+        <title>Academlo Logo</title>
+        <g>
+          <g>
+            <path
+              d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+            </path>
+          </g>
+        </g>
+    </svg>
+       <div class="Description">
+        <h1>Tienda</h1>
+        <h2 class="color">
+          Hogar
+        </h2>
+        <h2>
+          Productos
+        </h2>
+      </div>
+     <div class="icon-1">
+      <i class='bx bx-sun bx-sm' id="theme-btn"></i>
+      <div id="cart-btn">
+        <i class='bx bx-shopping-bag bx-sm' ></i>
+        <span class="counter" id="cart-counter">0</span>
+     </div>
+     <div class="MenuG">
+        <i class='bx bx-grid-alt bx-sm' id="menu-btn" ></i>
+      </div>
+       </div>
+     </nav>
+  </header>
+   <main class="Contenido">
+        <section class="Section-1">
+          <h2>
+            Nuevas Sudadera <br> Colecciones 2022
+          </h2>
+          <p>
+            Última llegada de la nueva sudadera Hanes Midweight Crewneck <br> importada de la serie 2022, con un diseño moderno.
+          </p>
+          <p class="Monto">
+            $14.00
+          </p>
+          <div class="Botones">
+          <button class="button1">Descubrir</button>
+          <button class="button2">Añadir al Carrito</button>
+          </div>
+        </section>
+        <div class="Counter">
+          <img src="./assets/images/featured2.png" alt="">
+        </div>
+   </main>
+   <section class="Total-Products">
+    <div class="Products1-Conteiner">
+      <ul class="Products">
+        <li>
+           Mostrar todo <br>
+           mostrar todos los Productos
+        </li>
+        <span class="Barra">
+          |
+        </span>
+        <li>
+          Sudadera con capucha <br>
+          3 productos
+         
+        </li>
+        <span  class="Barra">
+          |
+        </span>
+        <li>
+          Camisas <br>
+          4 productos
+        </li>
+        <span  class="Barra">
+          |
+        </span>
+        <li>
+          Sudaderas <br>
+          4 productos
+        </li>
+       </ul>
+       <div class="Productos" id="Productos">  
+        
+          
+            
+         </div>
+    </div>
+   </section>
+   <footer >
+    <div class="Footer">
+      <div class="box-footer"> 
+      <div class="Logo-footer">
+        <svg class="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+          <title>Academlo Logo</title>
+          <g>
+            <g>
+              <path
+                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+              </path>
+            </g>
+          </g>
+      </svg>
+      </div>
+      <div class="Terminos">
+       <h2>
+        Nuestra Informacion
+        <p>Trujillo Peru</p>
+       </h2>
+      </div>
+    </div>
+    
+     <div class="box-footer">
+      <h2>Sobre Nosotros</h2>
+      <a href="#"> Centro de Apoyo </a>
+      <a href="#">Atención al cliente</a>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Copiar a la derecha</a>
+    </div>
+    <div class="box-footer" >
+      <h2>Producto</h2>
+      <a href="#">Sudaderas con capucha</a>
+      <a href="#">Camisas</a>
+      <a href="#">Sudaderas</a>
+    </div>
+    <div class="box-footer">
+      <h2>Social</h2>
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+     </div>
+  </div>
+</div>
+</div>
+</footer>
+  
+   <div class="cart-conteiner hide" id="cart-conteiner">
+    <div class="cart2" id="cart2">
+      <div class="cart-close" id="close-cart">
+        <i class='bx bx-x bx-md'></i>
+         <div id="Consumir">
+
+         </div>
+         <p class="PrecioValor">Precio Total: $ <span id="PrecioTotal">0</span></p>
+         <button id="Vaciarcarrito" class="boton-agregar2">Vaciar Carrito</button>
+      </div>
+     </div>
+   </div>
+
+   <main id="Counter-Products">
+
+   </main>
+
+  
+
+  
+
+ 
+  
+ 
+   
+   
+
+  
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/stock.js"></script>
+</body>
+</html>
