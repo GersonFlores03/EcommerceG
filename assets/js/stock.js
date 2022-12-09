@@ -73,7 +73,7 @@ const items = [
     const objeto = items.find((produ) => produ.id === produtoId) 
     carrito.push(objeto)
     Actualizar()
-    console.log(carrito)
+   
   }
 
     const eliminarDelCarrito = (produtoId2) => {
