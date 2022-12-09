@@ -20,7 +20,10 @@
     cartOpen.addEventListener("click", () => Contenedor.classList.remove("hide"))
     cartClose.addEventListener("click", () => Contenedor.classList.add("hide"))
     
-/*  Carrito */
+
+
+    
+
 
 
 

@@ -435,6 +435,22 @@ footer{
  left: 20px;
 }
 
+.counter{
+ position: relative;
+ left: -8px;
+}
+.Counter img{
+  animation: move-vector 4s linear infinite;
+}
+@keyframes move-vector {
+  0%{
+    transform: translateY(15px);
+  }50%{
+    transform: translateY(0px);
+  }100%{
+    transform: translateY(15px);
+  }
+}
 
 
 
