@@ -3,6 +3,7 @@
   const cartOpen= document.getElementById("cart-btn")
   const cartClose= document.getElementById("close-cart")
   const Contenedor = document.getElementById("cart-conteiner")
+ 
   
  
      const CambioDeColor = () => { 

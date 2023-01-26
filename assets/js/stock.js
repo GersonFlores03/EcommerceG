@@ -100,5 +100,5 @@ const items = [
          localStorage.setItem("carrito",JSON.stringify(carrito))
      })
      Contadorcarrito.innerHTML = carrito.length
-     PrecioTotal.innerHTML = carrito.reduce((a ,prod) =>a +prod.price,0)
+     PrecioTotal.innerHTML = carrito.reduce((acc ,prod) =>acc +prod.price ,0)
   }

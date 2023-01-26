@@ -189,11 +189,7 @@ p{
   top: 0;
   left: 0;
   transition: all 300ms;
- 
-  
- 
-
-}
+ }
 
 .cart-conteiner.hide{
  left: -100%;
@@ -601,6 +597,8 @@ footer{
     bottom: -1900px;
   }
 }
+
+
 
 
 
